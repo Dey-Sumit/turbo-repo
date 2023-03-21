@@ -18,4 +18,3 @@ const m = {
 };
 
 module.exports = m;
-console.log("package tailwind.config.js", { m });
