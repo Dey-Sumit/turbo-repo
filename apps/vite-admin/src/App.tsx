@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Button } from "ui";
 import "./App.css";
 import "ui/styles.css";
-const a = 12;
 function App() {
   const [count, setCount] = useState(0);
 
