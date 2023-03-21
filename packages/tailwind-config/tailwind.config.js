@@ -1,7 +1,11 @@
 const colors = require("tailwindcss/colors");
 
 const m = {
-  content: [],
+  content: [
+    "./pages/**/*.{js,jsx,ts,tsx}",
+    "./components/**/*.{js,jsx,ts,tsx}",
+    "../../packages/ui/**/*.{js,jsx,ts,tsx}",
+  ],
   theme: {
     extend: {
       colors: {
