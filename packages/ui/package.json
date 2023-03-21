@@ -4,15 +4,29 @@
   "main": "./index.tsx",
   "types": "./index.tsx",
   "license": "MIT",
+  "exports": {
+    ".": "./dist",
+    "./styles.css": "./dist/index.css"
+  },
   "scripts": {
-    "lint": "eslint \"**/*.ts*\""
+    "lint": "eslint \"**/*.ts*\"",
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "check-types": "tsc --noEmit"
   },
   "devDependencies": {
     "@types/react": "^18.0.22",
+    "autoprefixer": "^10.4.14",
     "eslint": "^7.32.0",
     "eslint-config-custom": "*",
+    "postcss": "^8.4.21",
     "react": "^18.2.0",
+    "tailwind-config": "*",
+    "tailwindcss": "^3.2.7",
     "tsconfig": "*",
     "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "tsup": "^6.7.0"
   }
 }

@@ -1,4 +1,3 @@
-import * as React from "react";
 export const Button = () => {
-  return <button className="bg-red-800 p-5">Boop</button>;
+  return <button className="bg-blue-600 p-6">Boop aaa</button>;
 };
