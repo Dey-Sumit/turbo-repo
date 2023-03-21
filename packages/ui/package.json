@@ -2,12 +2,15 @@
   "name": "ui",
   "version": "0.0.0",
   "main": "./index.tsx",
-  "types": "./index.tsx",
   "license": "MIT",
   "exports": {
     ".": "./dist",
     "./styles.css": "./dist/index.css"
   },
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "types": "./dist/index.d.ts",
   "scripts": {
     "lint": "eslint \"**/*.ts*\"",
     "build": "tsup",
