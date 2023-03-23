@@ -1,3 +1,67 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* -------------------------------------------------------------------------- */
+/*                        Generic Swiper Custom Styles                        */
+/* -------------------------------------------------------------------------- */
+
+/* --------------------- Custom Swuper Navigation Icons --------------------- */
+.swiper-button-next::after {
+  content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSI+PGcgZmlsdGVyPSJ1cmwoI2EpIj48cGF0aCBmaWxsPSIjMzMzIiBkPSJNOC43NDMgNS4wMDJhMS4zMDUgMS4zMDUgMCAwIDAtMS44OTUgMS43OTNsNS4wNTIgNS4zNC01LjA1MiA1LjM0MWExLjMwNCAxLjMwNCAwIDEgMCAxLjg5NSAxLjc5M2w2Ljc0OC03LjEzMy02Ljc0OC03LjEzNFoiLz48L2c+PGRlZnM+PGZpbHRlciBpZD0iYSIgd2lkdGg9IjE3IiBoZWlnaHQ9IjIzLjA4NCIgeD0iLjQ5MSIgeT0iLjU5NCIgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSJzUkdCIiBmaWx0ZXJVbml0cz0idXNlclNwYWNlT25Vc2UiPjxmZUZsb29kIGZsb29kLW9wYWNpdHk9IjAiIHJlc3VsdD0iQmFja2dyb3VuZEltYWdlRml4Ii8+PGZlQ29sb3JNYXRyaXggaW49IlNvdXJjZUFscGhhIiByZXN1bHQ9ImhhcmRBbHBoYSIgdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAxMjcgMCIvPjxmZU9mZnNldCBkeD0iLTIiLz48ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIyIi8+PGZlQ29tcG9zaXRlIGluMj0iaGFyZEFscGhhIiBvcGVyYXRvcj0ib3V0Ii8+PGZlQ29sb3JNYXRyaXggdmFsdWVzPSIwIDAgMCAwIDAuNTE2NjY3IDAgMCAwIDAgMC41MTY2NjcgMCAwIDAgMCAwLjUxNjY2NyAwIDAgMCAwLjI1IDAiLz48ZmVCbGVuZCBpbjI9IkJhY2tncm91bmRJbWFnZUZpeCIgcmVzdWx0PSJlZmZlY3QxX2Ryb3BTaGFkb3dfODE2XzI2OTAzIi8+PGZlQmxlbmQgaW49IlNvdXJjZUdyYXBoaWMiIGluMj0iZWZmZWN0MV9kcm9wU2hhZG93XzgxNl8yNjkwMyIgcmVzdWx0PSJzaGFwZSIvPjwvZmlsdGVyPjwvZGVmcz48L3N2Zz4=) !important;
+}
+
+.swiper-button-prev::after {
+  content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNyIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSI+PGcgZmlsdGVyPSJ1cmwoI2EpIj48cGF0aCBmaWxsPSIjMzMzIiBkPSJNMTIuNzQ4IDE5LjI3YTEuMzA0IDEuMzA0IDAgMCAwIDEuODk1LTEuNzkzbC01LjA1Mi01LjM0MSA1LjA1Mi01LjM0MWExLjMwNSAxLjMwNSAwIDAgMC0xLjg5NS0xLjc5M0w2IDEyLjEzNmw2Ljc0OCA3LjEzM1oiLz48L2c+PGRlZnM+PGZpbHRlciBpZD0iYSIgd2lkdGg9IjE3IiBoZWlnaHQ9IjIzLjA4NCIgeD0iMCIgeT0iLjU5NCIgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSJzUkdCIiBmaWx0ZXJVbml0cz0idXNlclNwYWNlT25Vc2UiPjxmZUZsb29kIGZsb29kLW9wYWNpdHk9IjAiIHJlc3VsdD0iQmFja2dyb3VuZEltYWdlRml4Ii8+PGZlQ29sb3JNYXRyaXggaW49IlNvdXJjZUFscGhhIiByZXN1bHQ9ImhhcmRBbHBoYSIgdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAxMjcgMCIvPjxmZU9mZnNldCBkeD0iLTIiLz48ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIyIi8+PGZlQ29tcG9zaXRlIGluMj0iaGFyZEFscGhhIiBvcGVyYXRvcj0ib3V0Ii8+PGZlQ29sb3JNYXRyaXggdmFsdWVzPSIwIDAgMCAwIDAuNTE2NjY3IDAgMCAwIDAgMC41MTY2NjcgMCAwIDAgMCAwLjUxNjY2NyAwIDAgMCAwLjI1IDAiLz48ZmVCbGVuZCBpbjI9IkJhY2tncm91bmRJbWFnZUZpeCIgcmVzdWx0PSJlZmZlY3QxX2Ryb3BTaGFkb3dfODE2XzI2OTAyIi8+PGZlQmxlbmQgaW49IlNvdXJjZUdyYXBoaWMiIGluMj0iZWZmZWN0MV9kcm9wU2hhZG93XzgxNl8yNjkwMiIgcmVzdWx0PSJzaGFwZSIvPjwvZmlsdGVyPjwvZGVmcz48L3N2Zz4=) !important;
+}
+
+/* Styles for the "next" and "previous" buttons */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  @apply pt-[2px] text-xs text-black;
+}
+.swiper-button-prev::after {
+  @apply ml-[-6px];
+}
+
+/* Styles for the pagination bullets */
+.swiper-pagination-bullet {
+  @apply bg-white opacity-40;
+}
+
+/* Styles for the active pagination bullet */
+.swiper-pagination-bullet-active {
+  @apply bg-white opacity-100;
+}
+
+/* Styles for the "next" and "previous" buttons themselves */
+.swiper-button-next,
+.swiper-button-prev {
+  @apply !h-7 !w-7 rounded-full bg-white bg-opacity-90 opacity-100 lg:opacity-0;
+}
+
+/* Styles for when the "previous" button is disabled */
+.swiper-button-prev.swiper-button-disabled {
+  @apply pointer-events-auto cursor-not-allowed opacity-40 lg:opacity-0;
+}
+.swiper-button-next.swiper-button-disabled {
+  @apply pointer-events-auto cursor-not-allowed opacity-40 lg:opacity-0;
+}
+
+/* Styles for when the mouse is hovering over the swiper element */
+.swiper:hover .swiper-button-next,
+.swiper:hover .swiper-button-prev,
+.swiper:hover .carousel-slide-overlay {
+  @apply opacity-100 transition-opacity duration-300;
+}
+
+/* when the "previous" button is disabled and the mouse is hovering */
+.swiper:hover .swiper-button-prev.swiper-button-disabled {
+  @apply opacity-40 transition-opacity duration-300;
+}
+.swiper:hover .swiper-button-next.swiper-button-disabled {
+  @apply opacity-40 transition-opacity duration-300;
+}
+.a {
+  background-color: "red";
+}

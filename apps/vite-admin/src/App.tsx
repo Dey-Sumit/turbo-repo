@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { Button } from "ui";
+import { Button, Carousel } from "ui";
 import "./App.css";
-import "ui/styles.css";
+
 function App() {
   const [count, setCount] = useState(0);
 
@@ -16,6 +16,7 @@ function App() {
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
+        <Carousel />
       </div>
       <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
     </div>
