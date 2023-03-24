@@ -1,12 +1,10 @@
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* -------------------------------------------------------------------------- */
-/*                        Generic Swiper Custom Styles                        */
-/* -------------------------------------------------------------------------- */
-
-/* --------------------- Custom Swuper Navigation Icons --------------------- */
 .swiper-button-next::after {
   content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSI+PGcgZmlsdGVyPSJ1cmwoI2EpIj48cGF0aCBmaWxsPSIjMzMzIiBkPSJNOC43NDMgNS4wMDJhMS4zMDUgMS4zMDUgMCAwIDAtMS44OTUgMS43OTNsNS4wNTIgNS4zNC01LjA1MiA1LjM0MWExLjMwNCAxLjMwNCAwIDEgMCAxLjg5NSAxLjc5M2w2Ljc0OC03LjEzMy02Ljc0OC03LjEzNFoiLz48L2c+PGRlZnM+PGZpbHRlciBpZD0iYSIgd2lkdGg9IjE3IiBoZWlnaHQ9IjIzLjA4NCIgeD0iLjQ5MSIgeT0iLjU5NCIgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSJzUkdCIiBmaWx0ZXJVbml0cz0idXNlclNwYWNlT25Vc2UiPjxmZUZsb29kIGZsb29kLW9wYWNpdHk9IjAiIHJlc3VsdD0iQmFja2dyb3VuZEltYWdlRml4Ii8+PGZlQ29sb3JNYXRyaXggaW49IlNvdXJjZUFscGhhIiByZXN1bHQ9ImhhcmRBbHBoYSIgdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAxMjcgMCIvPjxmZU9mZnNldCBkeD0iLTIiLz48ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIyIi8+PGZlQ29tcG9zaXRlIGluMj0iaGFyZEFscGhhIiBvcGVyYXRvcj0ib3V0Ii8+PGZlQ29sb3JNYXRyaXggdmFsdWVzPSIwIDAgMCAwIDAuNTE2NjY3IDAgMCAwIDAgMC41MTY2NjcgMCAwIDAgMCAwLjUxNjY2NyAwIDAgMCAwLjI1IDAiLz48ZmVCbGVuZCBpbjI9IkJhY2tncm91bmRJbWFnZUZpeCIgcmVzdWx0PSJlZmZlY3QxX2Ryb3BTaGFkb3dfODE2XzI2OTAzIi8+PGZlQmxlbmQgaW49IlNvdXJjZUdyYXBoaWMiIGluMj0iZWZmZWN0MV9kcm9wU2hhZG93XzgxNl8yNjkwMyIgcmVzdWx0PSJzaGFwZSIvPjwvZmlsdGVyPjwvZGVmcz48L3N2Zz4=) !important;
 }
@@ -37,7 +35,7 @@
 /* Styles for the "next" and "previous" buttons themselves */
 .swiper-button-next,
 .swiper-button-prev {
-  @apply !h-7 !w-7 rounded-full bg-white bg-opacity-90 opacity-100 lg:opacity-0;
+  @apply h-7 w-7 rounded-full bg-white bg-opacity-90 opacity-100 lg:opacity-0;
 }
 
 /* Styles for when the "previous" button is disabled */

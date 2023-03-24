@@ -1,7 +1,5 @@
 import { Navigation, Pagination } from "swiper";
 import { Swiper } from "swiper/react";
-// import "swiper/swiper-element-bundle.min.css";
-// import "swiper/swiper.min.css";
 import { SwiperSlide } from "swiper/react";
 
 //! Note: All the css files for swiper imported in _app.tsx
@@ -15,8 +13,7 @@ export const Carousel = ({
   imageUrls = [
     "https://source.unsplash.com/random/1920x1080/?wallpaper",
     "https://source.unsplash.com/random/1920x1080/?wallpaper",
-    "https://source.unsplash.com/random/1920x1080/?wallpaper",
-    "https://source.unsplash.com/random/1920x1080/?wallpaper",
+    "https://source.unsplash.com/random/1920x1080/?cat",
   ],
   id = "abc",
 }: CarouselProps) => {
